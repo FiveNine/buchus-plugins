@@ -534,6 +534,12 @@ public class DefenceTrackerPlugin extends Plugin
 	{
 		switch (weapon)
 		{
+			case ELDER_MAUL:
+				if (hit > 0)
+				{
+					bossDef -= bossDef * .35;
+				}
+				break;
 			case DRAGON_WARHAMMER:
 				if (hit == 0)
 				{
